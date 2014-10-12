@@ -1,0 +1,66 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent" android:background="@drawable/smooth"
+	android:id="@+id/scrollView1" android:layout_width="fill_parent">
+	<RelativeLayout android:id="@+id/relativeLayout1"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:enabled="false"
+			android:editable="false" android:singleLine="false"
+			android:textColor="@color/black" android:layout_alignParentTop="true"
+			android:textStyle="normal|bold" android:typeface="normal"
+			android:text="@string/TC65header" android:selectAllOnFocus="false"
+			android:freezesText="true" android:id="@+id/TC65Title"></TextView>
+		<TextView android:text="PhoneNbr" android:layout_width="fill_parent"
+			android:id="@+id/phoneNbrText" android:layout_height="fill_parent" android:layout_below="@+id/TC65Title"
+			android:textColor="@color/black"></TextView>
+		<EditText android:id="@+id/phoneNbrEdit"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:layout_below="@+id/phoneNbrText" android:singleLine="true"
+			android:numeric="integer" android:editable="true" android:bufferType="editable"
+			android:text="@string/phoneNbr" android:textColor="@color/black"></EditText>
+
+		<TextView android:text="Password" android:layout_width="fill_parent"
+			android:id="@+id/passwordText" android:layout_height="fill_parent"
+			android:layout_below="@+id/phoneNbrEdit" android:textColor="@color/black"></TextView>
+		<EditText android:id="@+id/passwordEdit"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:layout_below="@+id/passwordText" android:singleLine="true"
+			android:text="@string/password" android:textColor="@color/black"></EditText>
+
+		<TextView android:text="Full url to the .jad file to update "
+			android:layout_width="fill_parent" android:id="@+id/urlText"
+			android:layout_height="fill_parent" android:layout_below="@+id/passwordEdit"
+			android:textColor="@color/black"></TextView>
+		<EditText android:id="@+id/urlEdit" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:layout_below="@+id/urlText"
+			android:singleLine="true" android:text="@string/url"
+			android:textColor="@color/black"></EditText>
+
+		<TextView android:text="APN to use" android:layout_width="fill_parent"
+			android:id="@+id/apnText" android:layout_height="fill_parent"
+			android:layout_below="@+id/urlEdit" android:textColor="@color/black"></TextView>
+		<EditText android:id="@+id/apnEdit" android:text="internet.tele2.se"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:layout_below="@+id/apnText" android:singleLine="true"
+			android:textColor="@color/black"></EditText>
+
+		<TextView android:text="Directory to install to"
+			android:layout_width="fill_parent" android:id="@+id/directoryText"
+			android:layout_height="fill_parent" android:layout_below="@+id/apnEdit"
+			android:textColor="@color/black"></TextView>
+		<EditText android:id="@+id/directoryEdit"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:layout_below="@+id/directoryText" android:singleLine="true"
+			android:textColor="@color/black" android:text="@string/directory"></EditText>
+		
+        
+        <Button android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@+id/directoryEdit" android:id="@+id/generateMessage" android:text="@string/GenerateTc65"></Button>
+        
+        <TextView android:layout_width="fill_parent" android:id="@+id/TC65InformationText"
+			android:layout_height="fill_parent" android:layout_below="@+id/generateMessage"
+			android:textColor="@color/black" android:text="@string/TC65InformationText"></TextView>
+		
+	</RelativeLayout>
+	
+</ScrollView>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/ScrollView01"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/smooth">
+	<RelativeLayout android:id="@+id/RelativeLayout01"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal|fill_horizontal">
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:enabled="false"
+			android:editable="false" android:singleLine="false"
+			android:textColor="@color/black" android:layout_alignParentTop="true"
+			android:textStyle="normal|bold" android:typeface="normal"
+			android:text="@string/header" android:selectAllOnFocus="false"
+			android:freezesText="true" android:id="@+id/Title" android:layout_centerHorizontal="true"></TextView>
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:text="Phone number:"
+			android:freezesText="true" android:singleLine="true"
+			android:editable="false" android:enabled="false" android:textColor="@color/black"
+			android:layout_below="@+id/Title" android:id="@+id/PhoneNoText"></TextView>
+		<EditText android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:singleLine="true"
+			android:phoneNumber="true" android:password="false" android:numeric="integer"
+			android:enabled="true" android:editable="true" android:text="@string/phoneNbr"
+			android:bufferType="editable" android:id="@+id/PhoneNoInput"
+			android:layout_below="@+id/PhoneNoText"></EditText>
+		<TextView android:layout_height="wrap_content"
+			android:singleLine="true" android:editable="false" android:enabled="false"
+			android:layout_width="fill_parent" android:text="SMS class:"
+			android:textColor="@color/black" android:layout_below="@+id/PhoneNoInput"
+			android:id="@+id/SMSClassText"></TextView>
+		<Spinner android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:layout_below="@+id/SMSClassText"
+			android:id="@+id/SMSClassSpinner"></Spinner>
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:singleLine="true"
+			android:text="SMS PID:" android:editable="false" android:enabled="false"
+			android:textColor="@color/black" android:layout_below="@+id/SMSClassSpinner"
+			android:id="@+id/SMSPIDText"></TextView>
+		<EditText android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:editable="true"
+			android:enabled="true" android:password="false" android:phoneNumber="false"
+			android:singleLine="true" android:text="00" android:layout_below="@+id/SMSPIDText"
+			android:id="@+id/SMSPIDInput"></EditText>
+		<RadioButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="8 bit"
+			android:textColor="@color/black" android:layout_below="@+id/SMSPIDInput"
+			android:id="@+id/bit8Radio"></RadioButton>
+		<EditText android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:editable="true"
+			android:enabled="true" android:singleLine="false" android:id="@+id/MainInput1"
+			android:layout_below="@+id/bit8Radio"></EditText>
+		<EditText android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:singleLine="false"
+			android:editable="true" android:enabled="true" android:id="@+id/MainInput2"
+			android:layout_below="@+id/MainInput1"></EditText>
+		<RadioButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="7 bit"
+			android:textColor="@color/black" android:layout_below="@+id/SMSPIDInput"
+			android:layout_toRightOf="@+id/bit8Radio" android:id="@+id/bit7Radio"></RadioButton>
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Number of chars: 0 "
+			android:enabled="false" android:editable="false" android:singleLine="true"
+			android:password="false" android:phoneNumber="false"
+			android:textColor="@color/black" android:id="@+id/CharCounterText"
+			android:layout_toRightOf="@+id/bit7Radio"
+			android:layout_above="@+id/MainInput1" android:layout_centerHorizontal="true"></TextView>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Send Message"
+			android:id="@+id/SendButton" android:layout_below="@+id/MainInput2"
+			android:layout_toRightOf="@+id/COMPortBAUDSpinner" android:layout_centerHorizontal="true"></Button>
+		<ImageView android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:id="@+id/chainImg"
+			android:src="@drawable/chain" android:layout_below="@+id/SendButton"
+			android:background="@drawable/chain"></ImageView>
+		<Button android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:layout_below="@+id/chainImg"
+			android:id="@+id/GenerateTc65" android:text="@string/GenerateTc65" android:layout_centerHorizontal="true"></Button>
+		<ImageView android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:id="@+id/chainImg2"
+			android:src="@drawable/chain" android:layout_below="@+id/GenerateTc65"
+			android:background="@drawable/chain"></ImageView>
+		<TextView 	android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:layout_below="@+id/chainImg2" android:id="@+id/mainHelp"
+			android:text="@string/mainHelp" android:textColor="@color/black"></TextView>
+
+
+
+
+
+
+
+
+
+
+
+
+	</RelativeLayout>
+
+
+
+
+</ScrollView>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Java Firmware Update for Cinterion TC65</string>
+    <string name="header">Advanced SMS sender.</string>
+	<string name="TC65header">Java Firmware Update for Cinterion TC65</string>
+	<string name="phoneNbr">+46720016707</string>
+
+<color name="black">#FF000000</color>
+
+<color name="white">#FFFFFFFF</color>
+
+
+<color name="transWhite">#0FFFFFFF</color>
+
+
+<string name="url">http://www.surfvind.se/MyTC65.jad</string>
+
+
+<string name="password">barkedal</string>
+
+
+<string name="directory">a:</string>
+
+
+<string name="GenerateTc65">Build a Cinterion/Siemens TC65 Update Message</string>
+
+
+<string name="TC65InformationText">By pressing the button above an SMS will be created according to how Cinterion/Siemens devices want them to be formatted. You will then be able to send it.  However if the message is larger than 150 bytes you will have to manually split it into several SMS:es according to TC65 specification. You can then still use this program, but will have to write the entire message yourself in the main view window. //Thomas</string>
+
+
+<string name="mainHelp">This program allows you to send SMS messages formated according to your needs. You can specify the SMS Class, the character encoding and the SMS PID to use. Please see SMS specifications for further details. If you are a normal user you will most likely not have any usage of this program. Others, for example developers that work with Cinterion units may find it a great tool to help update the software in their devices "over the air" by sending an SMS encoded in the correct way. </string>
+</resources>
